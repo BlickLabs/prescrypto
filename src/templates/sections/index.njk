@@ -3,6 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<div class="information-background"></div>
 <section class="information">
   <h1 class="information-title">
     Comienza hoy a recetar
@@ -18,57 +19,57 @@
        srcset="img/computer@2x.png 2x,
              img/computer@3x.png 3x"
         class="information-image">
-</section>
-<section class="easy">
-  <h2 class="prescrypto-title easy-title">
-    Es muy sencillo <span>¡y gratis!</span>
-    <img src="img/blue-line.svg" alt="Blue line">
-  </h2>
-  <div class="easy-cards">
-    <div class="easy-card">
-      <img src="img/card-1.svg">
-      <div class="easy-card-title">
-        Consulta
+  <div class="easy">
+    <h2 class="prescrypto-title easy-title">
+      Es muy sencillo <span>¡y gratis!</span>
+      <img src="img/blue-line.svg" alt="Blue line">
+    </h2>
+    <div class="easy-cards">
+      <div class="easy-card">
+        <img src="img/card-1.svg">
+        <div class="easy-card-title">
+          Consulta
+        </div>
+        <div class="easy-card-text">
+          Consulta un gran catálogo de medicamentos
+        </div>
       </div>
-      <div class="easy-card-text">
-        Consulta un gran catálogo de medicamentos
-      </div>
-    </div>
-    <div class="easy-card">
-      <img src="img/card-2.png"
-           srcset="img/card-2@2x.png 2x,
+      <div class="easy-card">
+        <img src="img/card-2.png"
+             srcset="img/card-2@2x.png 2x,
              img/card-2@3x.png 3x">
-      <div class="easy-card-title">
-        Guarda
+        <div class="easy-card-title">
+          Guarda
+        </div>
+        <div class="easy-card-text">
+          Guarda en tu historial todas tus Recetas emitidas
+        </div>
       </div>
-      <div class="easy-card-text">
-        Guarda en tu historial todas tus Recetas emitidas
-      </div>
-    </div>
-    <div class="easy-card">
-      <img src="img/card-3.png"
-           srcset="img/card-3@2x.png 2x,
+      <div class="easy-card">
+        <img src="img/card-3.png"
+             srcset="img/card-3@2x.png 2x,
              img/card-3@3x.png 3x">
-      <div class="easy-card-title">
-        Genera
+        <div class="easy-card-title">
+          Genera
+        </div>
+        <div class="easy-card-text">
+          Genera plantillas de tus recetas favoritas
+        </div>
       </div>
-      <div class="easy-card-text">
-        Genera plantillas de tus recetas favoritas
-      </div>
-    </div>
-    <div class="easy-card">
-      <img src="img/card-4.png"
-           srcset="img/card-4@2x.png 2x,
+      <div class="easy-card">
+        <img src="img/card-4.png"
+             srcset="img/card-4@2x.png 2x,
              img/card-4@3x.png 3x">
-      <div class="easy-card-title">
-        Protege
-      </div>
-      <div class="easy-card-text">
-        Protege tus recetas médicas de forma segura con nuestra tecnología
+        <div class="easy-card-title">
+          Protege
+        </div>
+        <div class="easy-card-text">
+          Protege tus recetas médicas de forma segura con nuestra tecnología
+        </div>
       </div>
     </div>
+    <a href="#" class="prescrypto-btn reverse easy-btn">Registrarme</a>
   </div>
-  <a href="#" class="prescrypto-btn reverse easy-btn">Registrarme</a>
 </section>
 <section class="doctor">
   <img src="img/doctor.png" class="doctor-img" alt="Doctor">
@@ -123,6 +124,7 @@
   </div>
 </section>
 <section class="patients">
+  <img src="img/patients.svg" alt="Patients" class="patients-image">
   <h2 class="patients-title">
     Más de 100,000
   </h2>
@@ -131,5 +133,4 @@
   </div>
   <button class="prescrypto-btn patients-btn">Registrarme</button>
 </section>
-
 {% endblock %}

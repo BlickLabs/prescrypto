@@ -1,10 +1,14 @@
 .information
   padding-top 188px
-  background-image url('../img/cover-azul@2x.jpg')
-  background-position center center
-  background-size cover
-  height 93.333vh
   position relative
+  z-index 1
+  &-background
+    position absolute
+    background-image url('../img/cover-azul@2x.jpg')
+    background-position center center
+    background-size cover
+    height 93.333vh
+    width 100%
   &-title
     margin 0
     font-family "Galano Grotesque"
@@ -53,8 +57,8 @@
     width 65.4166%
 .easy
   text-align center
-  padding 200px 12.3611% 66px 9.3055%
-  background-color #F9F9F9
+  padding 0 12.3611% 66px 9.3055%
+  margin-top -20px
   &-title
     text-align center
     position relative
@@ -167,6 +171,11 @@
 .patients
   background-color rgba(29, 41, 204, 0.84)
   padding 72px 13.75% 88.5px 13.75%
+  position relative
+  &-image
+    position absolute
+    top -28px
+    right 15.277%
   &-title
     font-family "Galano Grotesque"
     font-size remify(50px)
