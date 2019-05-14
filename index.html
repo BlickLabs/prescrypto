@@ -64,6 +64,10 @@
   <div>
     <a href="#">
       <img class="navbar-logo" src="img/logo.svg" alt="Navbar logo">
+      <img src="img/logo-mobile.png"
+           srcset="img/logo-mobile@2x.png 2x,
+             img/logo-mobile@3x.png 3x"
+           class="navbar-logo-mobile">
     </a>
   </div>
   <div class="navbar-option-container">
@@ -127,7 +131,7 @@
     Comienza hoy a recetar
   </h1>
   <p class="information-text">
-    Plataforma gratuita para generar y guardar recetas médicas
+    Plataforma <span>gratuita <img src="img/white-line.svg" alt="Blue line"></span> para generar y <br> guardar recetas médicas
   </p>
   <form class="information-form">
     <input type="email" class="information-form-input" name="email" placeholder="Correo electrónico">
@@ -139,8 +143,7 @@
         class="information-image">
   <div class="easy">
     <h2 class="prescrypto-title easy-title">
-      Es muy sencillo <span>¡y gratis!</span>
-      <img src="img/blue-line.svg" alt="Blue line">
+      Es muy sencillo <span>¡y gratis! <img src="img/blue-line.svg" alt="Blue line"></span>
     </h2>
     <div class="easy-cards">
       <div class="easy-card">
@@ -190,26 +193,29 @@
   </div>
 </section>
 <section class="doctor">
-  <img src="img/doctor.png" class="doctor-img" alt="Doctor">
-  <div class="doctor-content">
+  <figure class="doctor-img">
+    <img src="img/doctor.png" alt="Doctor"
+         srcset="img/doctor@2x.png 2x">
+  </figure>
+  <figure class="doctor-quotes">
     <img src="img/quotes.svg" alt="Quotes">
-    <div class="doctor-content-container">
-      <h1 class="prescrypto-title doctor-title">
-        Duis aute <span>irure dolor</span>
-        delde reprehende
-      </h1>
-      <p class="doctor-text">
-        Dis aute irure dolor in reprehenderit in voluptate velit esse  aute irure dolor in
-        reprehenderit in volupta
-      </p>
-      <div class="doctor-information">
-        <div class="doctor-name">
-          <div class="doctor-name-line"></div>
-          <span>Dr. Edson Lópex</span>
-        </div>
-        <div class="doctor-grade">
-          Cirjuano plástico
-        </div>
+  </figure>
+  <div class="doctor-content">
+    <h1 class="prescrypto-title doctor-title">
+      Duis aute <span>irure dolor</span> <br>
+      delde reprehende
+    </h1>
+    <p class="doctor-text">
+      Dis aute irure dolor in reprehenderit in voluptate velit esse  aute irure dolor in
+      reprehenderit in volupta
+    </p>
+    <div class="doctor-information">
+      <div class="doctor-name">
+        <div class="doctor-name-line"></div>
+        <span>Dr. Edson Lópex</span>
+      </div>
+      <div class="doctor-grade">
+        Cirjuano plástico
       </div>
     </div>
   </div>
@@ -242,13 +248,13 @@
   </div>
 </section>
 <section class="patients">
-  <img src="img/patients.svg" alt="Patients" class="patients-image">
   <h2 class="patients-title">
     Más de 100,000
   </h2>
   <div class="patients-subtitle">
     Pacientes recetados
   </div>
+  <img src="img/patients.svg" alt="Patients" class="patients-image">
   <button class="prescrypto-btn patients-btn">Registrarme</button>
 </section>
 
