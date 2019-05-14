@@ -10,7 +10,12 @@
     background-position center center
     background-size cover
     height 93.333vh
+    max-height 840px
     width 100%
+    @media screen and (min-height: 1280px)
+      max-height 700px
+    @media $sm
+      height 630px
     @media $xs
       height 352px
 
@@ -102,6 +107,10 @@
   text-align center
   padding 0 12.3611% 66px 9.3055%
   margin-top -20px
+  @media $sl
+    padding 0 5% 66px 5%
+  @media $sm
+    padding 0 12.3611% 66px 9.3055%
   @media $xs
     padding-bottom 30px
   &-title
@@ -123,14 +132,21 @@
     display flex
     justify-content space-between
     margin-top 42px
-    @media $xs
-      margin-top 0
+    @media $sm
       flex-wrap wrap
+      justify-content space-around
+    @media $xs
+      justify-content space-between
+      margin-top 0
   &-card
     background-color white
     width 21.453%
     height 286px
     text-align left
+    @media $sl
+      flex-basis 23%
+    @media $sm
+      flex-basis 36%
     @media $xs
       flex-basis 48%
       height 100px
@@ -154,6 +170,8 @@
           height 45px
     &:nth-child(3)
       padding 32px 4px 48px 36px
+      @media $sm
+        margin-top 30px
       @media $xs
         margin-top 12px
         padding 16px 0 7px 0
@@ -162,6 +180,8 @@
           height 49px
     &:nth-child(4)
       padding 26px 9px 17px 31px
+      @media $sm
+        margin-top 30px
       @media $xs
         margin-top 12px
         padding 7px 0 6px 0
@@ -189,6 +209,8 @@
       letter-spacing 0.3px
       color #7c7c7c
       margin-top 10px
+      @media $sl
+        font-size remify(14)
       @media $xs
         display none
   &-btn
@@ -205,6 +227,8 @@
   align-items flex-start
   padding 110px 13.75% 97px 13.75%
   justify-content space-between
+  @media $sl
+    padding 110px 5% 97px 6%
   @media $xs
     padding 0 0 23px 0
     flex-wrap wrap
@@ -212,6 +236,8 @@
     flex-basis 39.36%
     height auto
     margin-right 12.8352%
+    @media $sl
+      margin-right 5%
     @media $xs
       flex-basis 55.3125%
       margin-right 0
@@ -244,6 +270,8 @@
       display none
       @media $xs
         display block
+    @media $sm
+      font-size remify(30)
     @media $xs
       font-size remify(21)
       line-height 1.4
@@ -256,6 +284,8 @@
     letter-spacing 0.5px
     color #666666
     margin 13.2px 0 0 0
+    @media $sm
+      font-size remify(16)
     @media $xs
       font-size remify(12)
       line-height 1.75
@@ -263,6 +293,8 @@
   &-information
     display block
     margin 45px 58px 0 auto
+    @media $sm
+      margin 15px 13px 0 auto
     @media $xs
       margin 14px 0 0 0
   &-name
@@ -307,19 +339,23 @@
     display flex
     justify-content space-between
     flex-wrap wrap
+    @media $sm
+      img
+        &:last-child
+          display none
     @media $xs
       margin-top 0
       img
         width 45%
         height auto
-        &:last-child
-          display none
         &:nth-child(n+3)
           margin-top 17px
 .patients
   background-color rgba(29, 41, 204, 0.84)
   padding 72px 13.75% 88.5px 13.75%
   position relative
+  @media $sl
+    padding 37px 5% 40px 6%
   @media $xs
     padding 37px 0 40px 0
     text-align center
@@ -327,6 +363,9 @@
     position absolute
     top -28px
     right 15.277%
+    @media $sl
+      right 5%
+      width 36%
     @media $xs
       position relative
       width 67%
