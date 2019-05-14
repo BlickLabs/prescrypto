@@ -2,6 +2,8 @@
   padding-top 188px
   position relative
   z-index 1
+  @media $xs
+    padding 76px 10px 0 10px
   &-background
     position absolute
     background-image url('../img/cover-azul@2x.jpg')
@@ -9,6 +11,9 @@
     background-size cover
     height 93.333vh
     width 100%
+    @media $xs
+      height 352px
+
   &-title
     margin 0
     font-family "Galano Grotesque"
@@ -18,26 +23,55 @@
     letter-spacing -0.4px
     text-align center
     color #ffffff
+    @media $xs
+      font-size remify(25)
+      line-height 1.64
+      letter-spacing -0.1px
+      br
+        display block
   &-text
-    margin 0
+    margin 10px 0 0 0
     font-size remify(20)
     font-weight $medium
     line-height 2
     letter-spacing 0.4px
     text-align center
     color #ffffff
+    br
+      display none
+      @media $xs
+        display block
+    span
+      position relative
+      img
+        position absolute
+        bottom -7px
+        right 0
+        width 71px
+        height 3px
+        @media $xs
+          right 0
+          width 100%
+          height auto
+    @media $xs
+      font-size remify(14)
+      line-height 2
+      letter-spacing 0.3px
+      margin 0
   &-form
     text-align center
     margin-top 49px
+    @media $xs
+      margin-top 20px
+      display flex
+      align-items center
+      justify-content center
     &-input
       border-radius 6px
       border solid 1px #ffffff
       background-color rgba(255, 255, 255, 0.45)
       font-size 15px
-      font-weight 500
-      font-style normal
-      font-stretch normal
-      line-height normal
+      font-weight $medium
       letter-spacing 0.2px
       color #ffffff
       padding 13px 17px 12.7px 17px
@@ -51,41 +85,89 @@
         line-height normal
         letter-spacing 0.2px
         color #ffffff
+        @media $xs
+          font-size remify(12)
+      @media $xs
+        width 189px
+        font-size remify(12)
+        padding 10px 25.2px 11.7px 13.1px
+        margin-right 6px
   &-image
     display block
     margin 30px auto 0 auto
     width 65.4166%
+    @media $xs
+      width 90.9375%
 .easy
   text-align center
   padding 0 12.3611% 66px 9.3055%
   margin-top -20px
+  @media $xs
+    padding-bottom 30px
   &-title
     text-align center
     position relative
     display inline-block
     padding 0 0 10px 0
-    img
-      position absolute
-      right 0
-      bottom 0
+    span
+      position relative
+      img
+        position absolute
+        right 0
+        bottom -10px
+        width 60%
+    @media $sl
+      margin-top 20px
   &-cards
     width 100%
     display flex
     justify-content space-between
     margin-top 42px
+    @media $xs
+      margin-top 0
+      flex-wrap wrap
   &-card
     background-color white
     width 21.453%
     height 286px
     text-align left
+    @media $xs
+      flex-basis 48%
+      height 100px
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
     &:nth-child(1)
       padding 32px 30px 39px 32px
+      @media $xs
+        padding 13px 18px 0 18px
+        img
+          width 82px
+          height 49px
     &:nth-child(2)
       padding 35px 14px 39px 34px
+      @media $xs
+        padding 13px 0 3px 0
+        img
+          width 43px
+          height 45px
     &:nth-child(3)
       padding 32px 4px 48px 36px
+      @media $xs
+        margin-top 12px
+        padding 16px 0 7px 0
+        img
+          width 45px
+          height 49px
     &:nth-child(4)
       padding 26px 9px 17px 31px
+      @media $xs
+        margin-top 12px
+        padding 7px 0 6px 0
+        img
+          width 59px
+          height 59px
     &-title
       font-family "Galano Grotesque"
       font-size remify(20)
@@ -94,6 +176,11 @@
       letter-spacing 0.3px
       color #454f66
       margin-top 31px
+      @media $xs
+        margin-top 0
+        font-size remify(15)
+        font-weight $medium
+        letter-spacing 0.3px
     &-text
       font-family "Glacial Indifference"
       font-size remify(16)
@@ -102,28 +189,65 @@
       letter-spacing 0.3px
       color #7c7c7c
       margin-top 10px
+      @media $xs
+        display none
   &-btn
     margin-top 101px
+    @media $xs
+      display block
+      width 110%
+      margin 22px 0 0 -5%
 .doctor
-  background-image url('../img/doctor-bg@2x.png')
+  background-image url('../img/doctor-bg-mobile@2x.png')
   background-position center center
   background-size cover
   display flex
-  align-items center
+  align-items flex-start
   padding 110px 13.75% 97px 13.75%
   justify-content space-between
+  @media $xs
+    padding 0 0 23px 0
+    flex-wrap wrap
   &-img
-    width 411px
-    flex-basis 411px
-    height 485px
+    flex-basis 39.36%
+    height auto
+    margin-right 12.8352%
+    @media $xs
+      flex-basis 55.3125%
+      margin-right 0
+    img
+      width 100%
+      height 100%
+  &-quotes
+    margin-right 4.9137%
+    margin-top 72.7px
+    img
+      width 100%
+      height 100%
+    @media $xs
+      margin-top 23px
+      margin-right 20.9375%
   &-content
+    width auto
+    flex 1
     display flex
-    align-items flex-start
-    width 49%
-    &-container
-      margin-left 51.3px
+    flex-direction column
+    margin-top 72.7px
+    @media $xs
+      flex-basis 100%
+      margin-top 15px
+      padding 0 10px 0 20px
+
   &-title
     margin 0
+    br
+      display none
+      @media $xs
+        display block
+    @media $xs
+      font-size remify(21)
+      line-height 1.4
+      letter-spacing 0px
   &-text
     font-family "Galano Grotesque"
     font-size remify(18)
@@ -132,19 +256,23 @@
     letter-spacing 0.5px
     color #666666
     margin 13.2px 0 0 0
+    @media $xs
+      font-size remify(12)
+      line-height 1.75
+      letter-spacing 0.4px
   &-information
-    display inline-block
-    float right
-    padding-right 58px
-    margin-top 45px
+    display block
+    margin 45px 58px 0 auto
+    @media $xs
+      margin 14px 0 0 0
   &-name
     display flex
     align-items center
     &-line
-      width 27px
+      width 25px
       height 1px
       border solid 2px #2c2c2c
-      margin-right 21px
+      margin-right 13px
     span
       font-family "Gotham"
       font-size remify(21)
@@ -152,6 +280,10 @@
       line-height 1.67
       letter-spacing 0.6px
       color #2c2c2c
+      @media $xs
+        font-size 11px
+        letter-spacing 0.3px
+        color #2c2c2c
   &-grade
     font-family Gotham
     font-size remify(16)
@@ -159,23 +291,49 @@
     line-height 2.19
     letter-spacing 0.5px
     color #4678df
-    padding-left 48px
+    padding-left 39px
+    @media $xs
+      font-size 11px
+      letter-spacing 0.3px
 .communication
   padding 43px 8.5416% 86px 8.5416%
+  @media $xs
+    padding-bottom 41px
+    padding-top 0
   &-title
     text-align center
   &-items
     margin-top 49px
     display flex
     justify-content space-between
+    flex-wrap wrap
+    @media $xs
+      margin-top 0
+      img
+        width 45%
+        height auto
+        &:last-child
+          display none
+        &:nth-child(n+3)
+          margin-top 17px
 .patients
   background-color rgba(29, 41, 204, 0.84)
   padding 72px 13.75% 88.5px 13.75%
   position relative
+  @media $xs
+    padding 37px 0 40px 0
+    text-align center
   &-image
     position absolute
     top -28px
     right 15.277%
+    @media $xs
+      position relative
+      width 67%
+      display block
+      top 0
+      right 0
+      margin 0 auto
   &-title
     font-family "Galano Grotesque"
     font-size remify(50px)
@@ -184,11 +342,26 @@
     letter-spacing -0.3px
     color #ffffff
     margin 0
+    @media $xs
+      font-size remify(25)
+      line-height 2.24
+      letter-spacing -0.1px
+      text-align center
   &-subtitle
     font-size remify(27px)
     font-weight $medium
     line-height 1.48
     letter-spacing 0.5px
     color #ffffff
+    @media $xs
+      font-size remify(25)
+      font-weight $medium
+      line-height 1.6
+      letter-spacing 0.5px
+      text-align center
   &-btn
     margin-top 37px
+    @media $xs
+      display block
+      width 87.5%
+      margin 37px auto 0 auto

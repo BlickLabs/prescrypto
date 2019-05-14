@@ -16,9 +16,12 @@
       background-color $blue
     &:hover
       color inherit
+    @media $xs
+      font-size remify(12)
+      padding 10px 14px 11.4px 15px
   &-title
     font-family "Galano Grotesque"
-    font-size 38px
+    font-size remify(38)
     font-weight $medium
     line-height 1.13
     letter-spacing -0.1px
@@ -26,3 +29,7 @@
     margin 0
     span
       color $blue
+    @media $xs
+      font-size remify(20)
+      line-height 3.91
+      letter-spacing -0.3px

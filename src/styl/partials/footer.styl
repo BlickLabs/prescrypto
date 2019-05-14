@@ -6,6 +6,8 @@
   width 100%
   align-items center
   padding-left 34px
+  @media $xs
+    padding-left 22px
   &-blog
     font-family "Galano Grotesque"
     font-size remify(20)
@@ -16,13 +18,24 @@
     letter-spacing -0.4px
     color #3f4aca
     margin-right 20.7px
+    @media $xs
+      font-size remify(17)
+      letter-spacing -0.3px
+      margin-right 13px
   &-facebook
     margin-right 31.7px
+    @media $xs
+      margin-right 15.4px
   &-twitter
     margin-right 39px
+    @media $xs
+      margin-right 18px
   &-label
     font-family "Galano Grotesque"
     font-size remify(14)
     font-weight $medium
     letter-spacing 0.5px
     color #202020
+    @media $xs
+      font-size remify(12)
+      letter-spacing 0.4px
