@@ -96,6 +96,9 @@
         font-size remify(12)
         padding 10px 25.2px 11.7px 13.1px
         margin-right 6px
+    &-btn
+      @media $xs
+        font-size remify(12)
   &-image
     display block
     margin 30px auto 0 auto
@@ -224,12 +227,16 @@
     width 240px
     @media $xs
       display block
-      width 110%
-      margin 22px 0 0 -5%
+      width 100%
+      margin 22px auto 0 auto
+      height 49px
+      line-height 26px
   &-bg-image
     position absolute
     right 0
     bottom -220px
+    @media $xs
+      display none
 .doctor
   background-image url('../img/doctor-bg@2x.png')
   background-position center center
@@ -241,7 +248,7 @@
   @media $sl
     padding 110px 5% 97px 6%
   @media $xs
-    background-image url('../img/doctor-bg-mobile@2x.png')
+    background-image none
     padding 0 0 23px 0
     flex-wrap wrap
   &-img
@@ -365,6 +372,7 @@
       margin-top 0
       justify-content space-around
       width 45%
+      text-align left
       &:nth-child(3)
         img
           width 75%
@@ -373,6 +381,8 @@
           width 85%
       &:nth-child(n+3)
         margin-top 17px
+      &:last-child
+        display none
       img
         width 100%
         height auto
@@ -441,3 +451,4 @@
       display block
       width 87.5%
       margin 37px auto 0 auto
+      height 45px
