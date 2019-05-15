@@ -134,7 +134,7 @@
     display flex
     justify-content space-between
     margin-top 42px
-    @media $sm
+    @media screen and (max-width: 900px)
       flex-wrap wrap
       justify-content space-around
     @media $xs
@@ -147,8 +147,10 @@
     text-align left
     @media $sl
       flex-basis 23%
+    @media screen and (max-width: 900px)
+      flex-basis 34%
     @media $sm
-      flex-basis 36%
+      flex-basis 44%
     @media $xs
       flex-basis 48%
       height 100px
@@ -172,7 +174,7 @@
           height 45px
     &:nth-child(3)
       padding 32px 4px 48px 36px
-      @media $sm
+      @media screen and (max-width: 900px)
         margin-top 30px
       @media $xs
         margin-top 12px
@@ -182,7 +184,7 @@
           height 49px
     &:nth-child(4)
       padding 26px 9px 17px 31px
-      @media $sm
+      @media screen and (max-width: 900px)
         margin-top 30px
       @media $xs
         margin-top 12px
@@ -198,6 +200,8 @@
       letter-spacing 0.3px
       color #454f66
       margin-top 31px
+      @media $lg
+        margin-top 15px
       @media $xs
         margin-top 0
         font-size remify(15)
@@ -377,6 +381,8 @@
   background-color rgba(29, 41, 204, 0.84)
   padding 72px 13.75% 88.5px 13.75%
   position relative
+  @media $lg
+    padding-left 6%
   @media $sl
     padding 37px 5% 40px 6%
   @media $xs
@@ -386,6 +392,8 @@
     position absolute
     top -28px
     right 15.277%
+    @media $lg
+      right 8%
     @media $sl
       right 5%
       width 36%
@@ -402,12 +410,14 @@
       transform none
   &-title
     font-family "Galano Grotesque"
-    font-size remify(50px)
+    font-size remify(50)
     font-weight $medium
     line-height 1.6
     letter-spacing -0.3px
     color #ffffff
     margin 0
+    @media $sl
+      font-size remify(40)
     @media $xs
       font-size remify(25)
       line-height 2.24
