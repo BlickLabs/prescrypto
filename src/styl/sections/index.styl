@@ -21,8 +21,7 @@
 
   &-title
     margin 0
-    font-family "Galano Grotesque"
-    font-size remify(61)
+    font-size remify(58)
     font-weight $medium
     line-height 1.16
     letter-spacing -0.4px
@@ -81,7 +80,7 @@
       color #ffffff
       padding 13px 17px 12.7px 17px
       width 268px
-      margin-right 11px
+      margin-right 5px
       &::placeholder
         font-size 15px
         font-weight 500
@@ -107,6 +106,9 @@
   text-align center
   padding 0 12.3611% 66px 9.3055%
   margin-top -20px
+  position relative
+  z-index 1
+  overflow hidden
   @media $sl
     padding 0 5% 66px 5%
   @media $sm
@@ -203,11 +205,11 @@
         letter-spacing 0.3px
     &-text
       font-family "Glacial Indifference"
-      font-size remify(16)
+      font-size remify(15)
       font-weight $normal
       line-height 1.44
       letter-spacing 0.3px
-      color #7c7c7c
+      color #9b9b9b
       margin-top 10px
       @media $sl
         font-size remify(14)
@@ -215,12 +217,17 @@
         display none
   &-btn
     margin-top 101px
+    width 240px
     @media $xs
       display block
       width 110%
       margin 22px 0 0 -5%
+  &-bg-image
+    position absolute
+    right 0
+    bottom -220px
 .doctor
-  background-image url('../img/doctor-bg-mobile@2x.png')
+  background-image url('../img/doctor-bg@2x.png')
   background-position center center
   background-size cover
   display flex
@@ -230,6 +237,7 @@
   @media $sl
     padding 110px 5% 97px 6%
   @media $xs
+    background-image url('../img/doctor-bg-mobile@2x.png')
     padding 0 0 23px 0
     flex-wrap wrap
   &-img
@@ -282,7 +290,7 @@
     font-weight $medium
     line-height 1.94
     letter-spacing 0.5px
-    color #666666
+    color #9b9b9b
     margin 13.2px 0 0 0
     @media $sm
       font-size remify(16)
