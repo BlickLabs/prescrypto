@@ -38,8 +38,12 @@
     font-weight $medium
     letter-spacing 0.2px
     text-align center
+    display block
+    padding 13.3px 27.7px 12.5px 28.5px
     &.login
       color white
+      &:hover
+        color $blue
     &.signup
       color $blue
 
@@ -52,8 +56,10 @@
       position relative
       border-radius 6px
       border solid 1px #ffffff
-      padding 13.3px 27.7px 12.5px 28.5px
       background-color transparent
+      &:nth-child(1)
+        &:hover
+          background-color white
       &:nth-child(2)
         background-color white
 
@@ -68,7 +74,7 @@
 .active-section
   color white
 
-@media $xs
+@media screen and (max-width: 700px)
   .navbar
     justify-content space-between
     height 70px
