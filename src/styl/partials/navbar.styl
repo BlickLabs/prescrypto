@@ -30,8 +30,10 @@
     box-shadow 0 6px 8px 0 rgba(0,0,0,0.2)
     height 90px
     padding 0 69px 0 73px
+
     & > div > a > .navbar-logo
       margin-top 15px
+
   &-option
     font-family "Galano Grotesque"
     font-size remify(15)
@@ -40,12 +42,21 @@
     text-align center
     display block
     padding 13.3px 27.7px 12.5px 28.5px
+
     &.login
       color white
+
       &:hover
         color $blue
+
     &.signup
+      background-color #ffffff
       color $blue
+      display block
+
+      &:hover
+        background-color transparent
+        color white
 
     &-container
       display flex
@@ -60,8 +71,8 @@
       &:nth-child(1)
         &:hover
           background-color white
-      &:nth-child(2)
-        background-color white
+      // &:nth-child(2)
+      //   background-color white
 
 .hamburger
   &-visibility
