@@ -1,36 +1,40 @@
 {% extends "partials/base.njk" %}
 
-{% block title %}Comienza hoy a recetar{% endblock %}
+{% block title %}Comienza a recetar hoy{% endblock %}
 
 {% block content %}
 <div class="information-background"></div>
 <section class="information">
   <h1 class="information-title">
-    Comienza hoy a recetar
+    Comienza a recetar hoy
   </h1>
   <p class="information-text">
-    Plataforma <span>gratuita <img src="img/white-line.svg" alt="Blue line"></span> para generar y <br> guardar recetas médicas
+    Genera y administra recetas médicas de manera <span>gratuita <img src="img/white-line.svg" alt="Blue line"></span>
   </p>
   <form class="information-form">
     <input type="email" class="information-form-input" name="email" placeholder="Correo electrónico">
     <button type="button" class="prescrypto-btn information-form-btn">Registrarme</button>
   </form>
-  <img src="img/computer.png"
+  <!-- <img src="img/computer.png"
        srcset="img/computer@2x.png 2x,
              img/computer@3x.png 3x"
-        class="information-image">
+        class="information-image"> -->
+  <div class="information-image-container">
+    <img src="img/laptop-2x.png" class="information-image" alt="Imagen representativa de una laptop con una animación">
+    <img src="img/smartphone-2x.png" class="information-image-smartphone" alt="Imagen representativa de un smartphone blanco">
+  </div>
   <div class="easy">
     <h2 class="prescrypto-title easy-title">
-      Es muy sencillo <span>¡y gratis! <img src="img/blue-line.svg" alt="Blue line"></span>
+      Regístrate en Prescrypto y olvídate de las recetas a mano. Es muy sencillo <span>¡y gratis! <img src="img/blue-line.svg" alt="Blue line"></span>
     </h2>
     <div class="easy-cards">
       <div class="easy-card">
         <img src="img/card-1.svg">
         <div class="easy-card-title">
-          Consulta
+          Elige
         </div>
         <div class="easy-card-text">
-          Consulta un gran <br>catálogo de <br>medicamentos
+          Un gran catálogo <br>de medicamentos <br>está a tu disposición.
         </div>
       </div>
       <div class="easy-card">
@@ -41,8 +45,7 @@
           Guarda
         </div>
         <div class="easy-card-text">
-          Guarda en tu historial <br>
-          todas tus Recetas emitidas
+          Todas tus recetas emitidas<br>se almacenan en tu historial<br>para fácil acceso.
         </div>
       </div>
       <div class="easy-card">
@@ -53,8 +56,7 @@
           Genera
         </div>
         <div class="easy-card-text">
-          Genera plantillas de tus <br>
-          recetas favoritas
+          Plantillas para tus recetas más<br>comunes o las menos frecuentes.
         </div>
       </div>
       <div class="easy-card">
@@ -65,9 +67,7 @@
           Protege
         </div>
         <div class="easy-card-text">
-          Protege tus recetas <br>
-          médicas de forma segura <br>
-          con nuestra tecnología
+          La información de tus <br>recetas queda segura<br>con nuestra tecnología.
         </div>
       </div>
     </div>
@@ -88,21 +88,20 @@
     <img src="img/quotes.svg" alt="Quotes">
   </figure>
   <div class="doctor-content">
-    <h1 class="prescrypto-title doctor-title">
+    <!-- <h1 class="prescrypto-title doctor-title">
       Duis aute <span>irure dolor</span> <br>
       delde reprehende
-    </h1>
+    </h1> -->
     <p class="doctor-text">
-      Dis aute irure dolor in reprehenderit in voluptate velit esse  aute irure dolor in
-      reprehenderit in volupta
+      "Poder enviar recetas vía Whatsapp o correo es un beneficio para mis pacientes. A mí me ayuda a atenderlos mejor".
     </p>
     <div class="doctor-information">
       <div class="doctor-name">
         <div class="doctor-name-line"></div>
-        <span>Dr. Edson Lópex</span>
+        <span>Dr. Edson Ramírez</span>
       </div>
       <div class="doctor-grade">
-        Cirujano
+        Pediatra
       </div>
     </div>
   </div>
@@ -149,7 +148,7 @@
     Más de 100,000
   </h2>
   <div class="patients-subtitle">
-    Pacientes recetados
+    pacientes recetados
   </div>
   <img src="img/patients.svg" alt="Patients" class="patients-image">
   <button class="prescrypto-btn patients-btn">Registrarme</button>
